@@ -1,19 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: system-ui, sans-serif;
+  color: #111;
+  background: #fff;
 }
 
 .site-header,
 .site-footer {
-  padding: 20px;
-  background: #f2f2f2;
+  padding: 20px clamp(20px, 5vw, 64px);
 }
 
-nav {
+.site-header {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
 }
 
-main {
-  padding: 40px 20px;
+.site-logo {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 24px;
+}
+
+.site-nav a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: #111;
+}
+
+.site-nav a.is-active {
+  color: #111;
+  font-weight: 700;
+}
+
+.page {
+  padding: 64px clamp(20px, 5vw, 64px);
+  min-height: 60vh;
+}
+
+.site-footer {
+  border-top: 1px solid #eee;
+  color: #666;
 }
