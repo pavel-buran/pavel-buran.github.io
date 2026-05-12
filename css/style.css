@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.site-header,
+.site-footer {
+  padding: 20px;
+  background: #f2f2f2;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  padding: 40px 20px;
+}
